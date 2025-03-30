@@ -85,11 +85,11 @@ chattr +C "$XDG_CONFIG_HOME/chromium"
 # Configure Rust toolchain
 rustup default stable
 
-current_user="$(whoami)"
-if [ "$current_user" != "shellcode" ]; then
-  # Change my username by your own
-  grep -rl shellcode --exclude install.sh --exclude-dir .git | xargs sed -i "s/shellcode/$current_user/g"
+# current_user="$(whoami)"
+# if [ "$current_user" != "shellcode" ]; then
+#   # Change my username by your own
+#   grep -rl shellcode --exclude install.sh --exclude-dir .git | xargs sed -i "s/shellcode/$current_user/g"
 
-  # Remove my git config, create your own if needed
-  rm .config/git/config
-fi
+#   # Remove my git config, create your own if needed
+#   rm .config/git/config
+# fi
