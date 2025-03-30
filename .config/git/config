@@ -1,6 +1,5 @@
 [user]
-	name = ShellCode33
-	email = shellcode33@proton.me
-	signingkey = 8F94C574DA3B4DB0
+  name = echjansen
+  email = echjansen@outlook.com
 [commit]
-	gpgsign = true
+  gpgsign = true
