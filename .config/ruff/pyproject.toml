@@ -1,0 +1,28 @@
+[tool.ruff]
+# Enable all diagnostics...
+select = ["ALL"]
+# ...except the ones that follow
+ignore = [
+  # Don't emit diagnostics if...
+  #
+  # ...there are FIXMEs and TODOs in the code
+  "FIX",
+  # ...TODOs are not properly formatted
+  "TD",
+  # ...you don't comment
+  "D10",
+  # ...self parameter is not typed
+  "ANN101",
+  # ...cls parameter is not typed
+  "ANN102",
+  # ...print is used
+  "T201",
+  # ...processes are being run is used
+  "S603",
+  "S606",
+  # ...missing `from __future__ import annotations`
+  "FA100",
+  "FA102",
+]
+# Match Black default
+line-length = 88
